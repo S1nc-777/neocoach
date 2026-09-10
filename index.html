@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeoCoach — AI 跑步教练</title>
+<style>
+  :root { --fg:#3D3D3D; --muted:#8A8A8A; --accent:#58CC02; --accent-dark:#46A302; --bg:#F7F7F7; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); line-height:1.75; font-size:16px;
+         font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px 64px; }
+
+  header { text-align:center; padding:56px 20px 40px; }
+  .logo { width:112px; height:112px; border-radius:26px; display:block; margin:0 auto 20px;
+          box-shadow:0 8px 28px rgba(0,0,0,.12); }
+  h1 { margin:0 0 10px; font-size:30px; letter-spacing:.5px; }
+  .tagline { color:var(--muted); font-size:16px; margin:0; }
+
+  .card { background:#fff; border-radius:18px; padding:24px; margin-bottom:16px;
+          box-shadow:0 2px 12px rgba(0,0,0,.05); }
+  h2 { margin:0 0 14px; font-size:18px; }
+  ul { margin:0; padding-left:1.2em; }
+  li { margin-bottom:8px; }
+  li:last-child { margin-bottom:0; }
+  strong { color:#2F2F2F; }
+
+  .note { background:#F2FBE7; border-radius:18px; padding:20px 24px; font-size:14px; margin-bottom:16px; }
+  .note b { color:var(--accent-dark); }
+
+  a { color:var(--accent-dark); }
+  .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:4px; }
+  .links a { background:#fff; border-radius:12px; padding:12px 18px; text-decoration:none;
+             box-shadow:0 2px 10px rgba(0,0,0,.05); font-size:15px; }
+  .links a:hover { box-shadow:0 4px 16px rgba(0,0,0,.10); }
+
+  footer { text-align:center; color:var(--muted); font-size:13px; padding-top:24px; }
+  footer div { margin-bottom:6px; }
+  .fill { background:#FFF4E5; border:1px solid #FFD79A; border-radius:12px;
+          padding:14px 18px; margin-bottom:20px; font-size:14px; }
+  .fill b { color:#C2410C; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="logo" src="icon-512.png" alt="NeoCoach">
+    <h1>NeoCoach</h1>
+    <p class="tagline">AI 跑步教练 — 每天告诉你今天该怎么练</p>
+  </header>
+
+  <div class="card">
+    <h2>它做什么</h2>
+    <p style="margin-top:0">NeoCoach 把华为手表里的运动与健康数据，翻译成每天一句「今天该怎么练」。</p>
+    <ul>
+      <li><strong>今日建议</strong> — 结合静息心率、睡眠评分与近 7 天负荷，给出当天强度与配速区间</li>
+      <li><strong>恢复评分</strong> — 判断你今天该练还是该歇，避免过度训练</li>
+      <li><strong>训练报告</strong> — 周报 / 月报，看清自己的长期趋势</li>
+      <li><strong>跑步记录</strong> — 距离、配速、心率区间一目了然</li>
+      <li><strong>AI 教练对话</strong> — 随时提问，基于你自己的数据回答</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>数据安全</h2>
+    <p style="margin-top:0">所有健康数据默认<strong>只保存在你的手机本地</strong>，我们没有任何服务器。</p>
+    <p style="margin-bottom:0">只有当你自行填写 API Key 并开启 AI 对话时，经过<strong>数值化处理</strong>的健康摘要
+      才会通过加密连接发送给大模型服务商。不配置 Key，就没有任何数据离开你的设备。</p>
+  </div>
+
+  <div class="note">
+    <b>说明：</b>本应用为运动辅助工具，<strong>不提供医疗诊断建议</strong>。
+    如有身体不适或疾病，请咨询专业医师。无手表也可使用课程与训练计划功能。
+  </div>
+
+  <div class="links">
+    <a href="privacy-policy.html">📄 隐私政策</a>
+  </div>
+
+  <footer>
+    <div>开发者：谢建豪</div>
+    <div>联系邮箱：2156133188@qq.com</div>
+    <div>© 2026 NeoCoach</div>
+  </footer>
+
+</div>
+</body>
+</html>
